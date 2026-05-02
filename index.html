@@ -2,51 +2,68 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Copa do Mundo 2026</title>
+    <title>Grupos da Copa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <a href="#organizacao">Organização</a>
-        <a href="#formato">Formato</a>
-        <a href="#impacto">Impacto</a>
-    </nav>
+    <h1 class="titulo">Grupos da Copa do Mundo</h1>
 
-    <section id="organizacao" class="secao">
-        <h2>🌍 Organização e Sedes</h2>
-        <p>
-            A Copa do Mundo FIFA de 2026 será a primeira edição realizada em três países:
-            Estados Unidos, Canadá e México. Essa será também a maior Copa da história
-            em número de cidades-sede, com partidas distribuídas por diversas regiões
-            da América do Norte.
-        </p>
-    </section>
+    <div id="container">
 
-    <section id="formato" class="secao">
-        <h2>⚽ Novo Formato</h2>
-        <p>
-            O torneio contará com 48 seleções, em vez das tradicionais 32.
-            As equipes serão divididas em grupos, aumentando o número total
-            de jogos e dando mais oportunidades para países de diferentes
-            continentes participarem.
-        </p>
-    </section>
+        <div class="card" id="grupoA">
+            <h2>🅰️ Grupo A</h2>
 
-    <section id="impacto" class="secao">
-        <h2>🏆 Expectativas e Impacto</h2>
-        <p>
-            A edição de 2026 promete ser uma das mais assistidas da história,
-            com grande impacto econômico e cultural nos países-sede.
-            Seleções tradicionais e emergentes devem protagonizar jogos de alto nível.
-        </p>
-    </section>
+            <ul>
+                <li>México</li>
+                <li>África do Sul</li>
+                <li>Coreia do Sul</li>
+                <li>República Tcheca</li>
+            </ul>
 
-    <div class="botao-area">
-        <button onclick="mostrarImagem()">Mostrar Tabela de Jogos</button>
+            <details>
+                <summary>Saiba Mais</summary>
+                <p>O jogo de abertura será México x África do Sul. Confrontos entre Coreia do Sul e seleções europeias já ocorreram em várias Copas.</p>
+            </details>
+        </div>
+
+        <div class="card" id="grupoB">
+            <h2>🅱️ Grupo B</h2>
+
+            <ul>
+                <li>Canadá</li>
+                <li>Suíça</li>
+                <li>Catar</li>
+                <li>Bósnia</li>
+            </ul>
+
+            <details>
+                <summary>Saiba Mais</summary>
+                <p>O Canadá joga em casa. Catar e Suíça já se enfrentaram em amistosos internacionais.</p>
+            </details>
+        </div>
+
+        <div class="card" id="grupoC">
+            <h2>🅲 Grupo C</h2>
+
+            <ul>
+                <li>Brasil</li>
+                <li>Marrocos</li>
+                <li>Haiti</li>
+                <li>Escócia</li>
+            </ul>
+
+            <details>
+                <summary>Saiba Mais</summary>
+                <p>Brasil nunca perdeu para a Escócia em Copas. Já dividiram grupo em 1998.</p>
+            </details>
+        </div>
+
     </div>
 
-    <div id="resultado"></div>
+    <div class="botao-area">
+        <button onclick="proximo()">Próximo</button>
+    </div>
 
     <script src="script.js"></script>
 </body>

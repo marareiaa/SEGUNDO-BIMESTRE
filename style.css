@@ -1,60 +1,69 @@
 body {
-    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    background: linear-gradient(to right, #009c3b, #ffdf00);
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
-nav {
-    background-color: #1e3a8a; 
-    padding: 15px;
+.titulo {
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    color: #002776; 
+    font-size: 28px;
+    font-weight: bold;
 }
 
-nav a {
-    color: #ffffff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid #009c3b; 
+    width: 260px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     transition: 0.3s;
 }
 
-nav a:hover {
-    color: #93c5fd; 
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ffdf00; 
 }
 
-.secao {
-    background: #ffffff;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 12px;
-    border-left: 6px solid #3b82f6; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+ul {
+    padding-left: 20px;
 }
 
-h2 {
-    font-size: 26px;
+li {
+    margin-bottom: 6px;
+    color: #333;
+}
+
+details {
+    margin-top: 12px;
+    color: #002776;
     font-weight: bold;
-    color: #1e3a8a;
-    text-align: center;
 }
 
-p {
-    font-size: 16px;
-    color: #444;
-    text-align: justify;
-    line-height: 1.6;
+summary {
+    cursor: pointer;
 }
 
 .botao-area {
     text-align: center;
-    margin: 30px;
+    margin: 25px;
 }
 
 button {
     padding: 12px 25px;
     border-radius: 10px;
-    background: linear-gradient(to right, #3b82f6, #2563eb);
+    background: linear-gradient(to right, #002776, #009c3b);
     color: white;
     border: none;
     font-weight: bold;
@@ -63,14 +72,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(to right, #2563eb, #1e40af);
+    background: linear-gradient(to right, #009c3b, #ffdf00);
+    color: #002776;
     transform: scale(1.05);
-}
-
-#resultado img {
-    display: block;
-    margin: 25px auto;
-    border-radius: 12px;
-    max-width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
