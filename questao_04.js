@@ -1,28 +1,27 @@
-function add() {
+function revelar() {
 
-    let container = document.getElementById("Cards");
+    document.getElementById("jogador-img").src = "img/_vinicius_junior.png";
 
-    let novoCard = document.createElement("div");
-    novoCard.className = "card";
-    novoCard.style.width = "22rem";
+    document.getElementById("nome").textContent =
+        "Vinícius José Paixão de Oliveira Júnior";
 
-    novoCard.innerHTML = `
-        <img src="img/Lucas_Paqueta.png" class="card-img-top">
+    document.getElementById("data").textContent =
+        "12/07/2000 (25 anos)";
 
-        <div class="card-body">
-            <h5 class="card-title">
-                Lucas Paquetá
-                <span class="badge text-bg-secondary">8,8</span>
-            </h5>
+    document.getElementById("altura").textContent =
+        "1,76 m";
 
-            <p class="card-text">
-                <strong>Nome:</strong> Lucas Tolentino Coelho de Lima<br>
-                <strong>Nascimento:</strong> 27/08/1997<br>
-                <strong>Altura:</strong> 1,80 m<br>
-                <strong>Posição:</strong> Meio-campista
-            </p>
-        </div>
-    `;
+    document.getElementById("posicao").textContent =
+        "Ponta-esquerda / Atacante";
 
-    container.appendChild(novoCard);
+    document.getElementById("rank").textContent =
+        "9,5";
+
+    let elementos = ["nome", "data", "altura", "posicao", "rank"];
+
+    elementos.forEach(id => {
+        let el = document.getElementById(id);
+        el.classList.remove("placeholder");
+        el.classList.add("card-text");
+    });
 }
